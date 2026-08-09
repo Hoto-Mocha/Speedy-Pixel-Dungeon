@@ -1,6 +1,6 @@
 # Speedy Pixel Dungeon
 
-for korean document, visit [here]().
+for korean document, visit [here](https://github.com/Hoto-Mocha/Speedy-Pixel-Dungeon/blob/main/README_KR.md).
 
 Speedy Pixel Dungeon is a mod of [Shattered Pixel Dungeon](https://shatteredpixel.com/shatteredpd/).
 
