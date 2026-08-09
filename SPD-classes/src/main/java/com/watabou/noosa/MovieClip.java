@@ -25,6 +25,8 @@ import com.watabou.utils.RectF;
 
 public class MovieClip extends Image {
 
+	public static int FPS_BOOST = 5;
+
 	protected Animation curAnim;
 	protected int curFrame;
 	protected float frameTimer;
@@ -118,6 +120,7 @@ public class MovieClip extends Image {
 		public boolean looped;
 		
 		public Animation( int fps, boolean looped ) {
+			fps *= FPS_BOOST;
 			this.delay = 1f / fps;
 			this.looped = looped;
 		}
