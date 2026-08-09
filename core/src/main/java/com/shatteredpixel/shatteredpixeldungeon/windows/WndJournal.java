@@ -79,6 +79,7 @@ import com.watabou.noosa.ColorBlock;
 import com.watabou.noosa.Image;
 import com.watabou.noosa.Visual;
 import com.watabou.noosa.ui.Component;
+import com.watabou.utils.DeviceCompat;
 import com.watabou.utils.RectF;
 import com.watabou.utils.Reflection;
 
@@ -851,6 +852,15 @@ public class WndJournal extends WndTabbed {
 				@Override
 				public boolean onClick(float x, float y) {
 					if (inside(x, y)) {
+						if (DeviceCompat.isDebug() && Dungeon.hero != null) {
+							if (Item.class.isAssignableFrom(itemClass)) {
+								Item item = (Item) Reflection.newInstance(itemClass);
+								if (item != null) {
+									item.identify();
+									item.doPickUp(Dungeon.hero);
+								}
+							}
+						}
 						Image sprite = new ItemSprite();
 						sprite.copy(icon);
 						if (ShatteredPixelDungeon.scene() instanceof GameScene){
