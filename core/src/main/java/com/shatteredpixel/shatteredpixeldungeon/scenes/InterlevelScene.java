@@ -214,9 +214,9 @@ public class InterlevelScene extends PixelScene {
 			}
 		Random.popGenerator();
 		
-		if (DeviceCompat.isDebug()){
+//		if (DeviceCompat.isDebug()){
 			fadeTime = 0f;
-		}
+//		}
 
 		insets = Game.platform.getSafeInsets(PlatformSupport.INSET_BLK).scale(1f/defaultZoom);
 
