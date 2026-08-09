@@ -17,6 +17,9 @@ allprojects {
         appVersionCode = 896
         appVersionName = '3.3.8'
 
+        appVersionCode += 1
+        appVersionName += '_based_0.0.1'
+
         appJavaCompatibility = JavaVersion.VERSION_11
 
         appAndroidCompileSDK = 36   //Android 15
