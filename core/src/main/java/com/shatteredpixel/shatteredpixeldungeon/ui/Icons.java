@@ -444,7 +444,7 @@ public enum Icons {
 				icon.scale.set(PixelScene.align(0.49f));
 				break;
 			case HIKARI:
-				icon.frame( icon.texture.uvRectBySize( 192, 96, 15, 19 ) );
+				icon.frame( icon.texture.uvRectBySize( 224, 96, 15, 19 ) );
 				break;
 
 		}
