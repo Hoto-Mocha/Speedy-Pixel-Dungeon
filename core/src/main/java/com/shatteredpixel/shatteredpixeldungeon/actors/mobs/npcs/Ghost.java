@@ -350,6 +350,16 @@ public class Ghost extends NPC {
 				weapon.upgrade(itemLevel);
 				armor.upgrade(itemLevel);
 
+				//시드에 관계없이 2티어 무기 생성
+				weapon = (Weapon) Generator.randomUsingDefaults(Generator.wepTiers[1]);
+				armor = new LeatherArmor();
+
+				weapon.level(0);
+				weapon.enchant(null);
+				weapon.cursed = false;
+				weapon.upgrade(1);
+				armor.upgrade(1);
+
 				// 20% base chance to be enchanted, stored separately so status isn't revealed early
 				//we generate first so that the outcome doesn't affect the number of RNG rolls
 				enchant = Weapon.Enchantment.random();
