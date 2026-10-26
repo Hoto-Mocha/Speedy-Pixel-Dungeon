@@ -10,6 +10,7 @@ Speedy Pixel Dungeon is a mod of [Shattered Pixel Dungeon](https://shatteredpixe
 - Projectile speed is 5x faster.
 - Wand bolt is 5x faster.
 - Level switch cutscene is skipped.
+- Sad Ghost always offers 2-tier +1 equipments
 
 ## How to Play
 
